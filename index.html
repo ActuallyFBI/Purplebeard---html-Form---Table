@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
   <h1>Subscribe to Cat Facts!</h1>
-  <img src="images/20220216_211343.jpg" alt="Cat in a brown paper bag" class="images" />
+  </header>
+  <img src="images/purrl1.jpg" alt="Cat in a brown paper bag" class="images" />
   <p>Sign up to receive <strong>AMAZING</strong> daily facts about cats to your e-mail!</p>
   <form action="form-page" method="post">
+    <fieldset>
     <ul>
       <li>
         <label for="name">Name:</label>
@@ -21,17 +24,38 @@
         <label for="mail">E-mail:</label>
         <input type="email" id="mail" name="user_email" />
       </li>
-      <li>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
-      </li>
-    <li class="button">
-      <button type="submit">Subscribe!</button>
-    </li>
   </ul>
-  </form>
+  <label for="choose">Choose one:<select id="choose" name="choose">
+      <option value="">(select one)</option>
+      <option value="1">Giraffe</option>
+      <option value="2">A cold winters morning</option>
+      <option value="3">Coffee</option>
+      <option value="4">Ants</option>
+    </select>
+  </label>
+  <ul>
+  <li>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </li>
+  <label for="terms-and-conditions" name="terms-and-conditions">
+    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+  </label>
+<li class="button">
+  <button type="submit" value="submit">Meow!</button>
+</li>
+</ul>
+</form>
+</fieldset>
   <h2>This is my cat, her name is Purrl!</h2>
-  <img src="images/20211225_113219.jpg" alt="Cat in a christmas tree" class="images" />
+  <div class="gallery">
+    <img src="images/purrl8.jpg" />
+    <img src="images/purrl2.jpg" />
+    <img src="images/purrl4.jpg" />
+    <img src="images/purrl5.jpg" />
+    <img src="images/purrl3.jpg" />
+    <img src="images/purrl7.jpg" />
+  </div>
   <h3>Purrls favourite things:</h3>
   <table>
     <tr>
@@ -55,9 +79,10 @@
       <td>Your lap</td>
     </tr>
   </table>
-  <img src="images/20220220_193811.jpg" alt="Cat sleeping in a basket" class="images" />
+  <img src="images/purrl6.jpg" alt="Cat in a brown paper bag" class="images" />
 </body>
 <footer>
-  <h2>Thankyou for visiting cat facts!</h2>
+  <h4>Thankyou for dropping by!</h4>
+  <p>© 2022 ActuallyFBI</p>
 </footer>
 </html>
