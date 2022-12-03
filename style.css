@@ -241,13 +241,17 @@ select {
   font-size: 20px;
   text-transform: uppercase;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(64, 0, 255);
+  background: rgb(252, 152, 255);
   }
 
 .anchor {
   text-transform: uppercase;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-right: 50px;
-font-size: 20px;
+  font-size: 20px;
+  color: rgb(0, 123, 18);
+  background: rgb(0, 255, 123);
   }
 
 a {
@@ -256,16 +260,11 @@ a {
 
 a:link { 
   text-decoration: none;
-  color: rgb(31, 0, 123);
-  background: rgb(0, 255, 123);
   font-weight: 600;
 }
 
-
 a:visited { 
   text-decoration: none;
-  color: rgb(0, 251, 255);
-  background: rgb(255, 153, 0);
   font-weight: 600;  
 }
 
