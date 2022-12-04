@@ -186,6 +186,7 @@ h2 {
   width: 100%;
   font-size: 36px;
   border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
 }
 
 h3 {
@@ -198,6 +199,7 @@ h3 {
   margin-right: auto;
   font-size: 36px;
   border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
 }
 
 footer {
@@ -225,6 +227,7 @@ h5 {
   height: 23px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 
 #choose {
@@ -251,6 +254,8 @@ select {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(64, 0, 255);
   background: rgb(252, 152, 255);
+  border-radius: 10px;
+  border: 3px solid white;
   }
 
 .anchor {
@@ -258,8 +263,10 @@ select {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-right: 50px;
   font-size: 17px;
-  color: rgb(0, 123, 18);
+  color: rgb(0, 87, 13);
   background: rgb(0, 255, 123);
+  border-radius: 10px;
+  border: 3px solid white;
   }
 
 a {
@@ -298,4 +305,62 @@ img:hover {
 .facts {
   font-family: 'Arial Narrow Bold', sans-serif;
   font-size: 25px;
+  font-weight: 700;
+}
+
+.title-word {
+  animation: color-animation 0.5s linear infinite;
+  font-size: 30px;
+}
+
+.title-word-1 {
+  --color-1: #ffff00;
+  --color-2: #ff6f00;
+  --color-3: #ff0400;
+}
+
+.title-word-2 {
+  --color-1: #ffee00;
+  --color-2: #ff8000;
+  --color-3: #ff0000;
+}
+
+.title-word-3 {
+  --color-1: #fff700;
+  --color-2: #ffae00;
+  --color-3: #ff0026;
+}
+
+.title-word-4 {
+  --color-1: #ffea00;
+  --color-2: #dfd353;
+  --color-3: #ff00a2;
+}
+
+.title-word-5 {
+  --color-1: #eaff00;
+  --color-2: #55ff00;
+  --color-3: #ff00e1;
+}
+
+.title-word-6 {
+  --color-1: #eeff00;
+  --color-2: #15ff00;
+  --color-3: #dd00ff;
+}
+
+.title-word-7 {
+  --color-1: #eaff00;
+  --color-2: #00ff04;
+  --color-3: #5900ff;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-2)}
+  33%   {color: var(--color-3)}
+  65%   {color: var(--color-4)}
+  66%   {color: var(--color-5)}
+  99%   {color: var(--color-6)}
+  100%  {color: var(--color-7)}
 }
